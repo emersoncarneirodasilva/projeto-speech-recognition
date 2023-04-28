@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+
+.speech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #505285 0%,
+    #585e92 12%,
+    #65689f 25%,
+    #7474b0 37%,
+    #7e7ebb 50%,
+    #8389c7 62%,
+    #9795d4 75%,
+    #a2a1dc 87%,
+    #b5aee4 100%
+  );
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+#textarea {
+  text-align: justify;
+  width: 80%;
+  height: 40%;
+  padding: 1rem;
+  margin: 50px auto;
+  border-radius: 7px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: 0;
+}
+
+textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(214, 214, 214);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgray;
+}
+
+.fas {
+  font-weight: 600;
+  font-size: 3rem;
+  min-width: 3.5rem;
+  color: black;
+}
+
+#buttons {
+  display: flex;
+  gap: 30px;
+}
+
+button {
+  gap: 10px;
+  padding: 15px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnGravar:hover {
+  background-color: rgb(20, 223, 87);
+}
+
+.btnParar:hover {
+  background-color: rgb(255, 144, 54);
+}
+
+#btnBaixar:hover {
+  background-color: rgb(49, 67, 228);
+}
+
+#btnLimpar:hover {
+  background-color: rgb(235, 45, 45);
+}
+
+.fa-trash-alt:hover {
+  color: #000;
+}
+
+@media (max-width: 530px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .fas {
+    font-size: 2.5rem;
+    min-width: 2.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .fas {
+    font-size: 2rem;
+    min-width: 2rem;
+  }
+}
+
+@media (max-width: 395px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
